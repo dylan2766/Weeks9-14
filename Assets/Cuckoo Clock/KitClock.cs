@@ -42,6 +42,12 @@ public class KitClock : MonoBehaviour
             hourHand.Rotate(0, 0, -(30 / timeAnHourTakes) * Time.deltaTime);
             yield return null;
         }
+        hour++;
+        if(hour >= 13)
+        {
+            hour = 1;
+        }
+
         OnTheHour.Invoke(hour);
     }
 
