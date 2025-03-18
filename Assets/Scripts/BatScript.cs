@@ -8,7 +8,7 @@ public class BatScript : MonoBehaviour
     //Write a coroutine that makes a sprite do something (grow, move, rotate, etc) using an AnimationCurve.
 
     public AnimationCurve BATMANBOOGIE;
-    public Vector3 SIZE;
+    public float SIZE;
 
     public float t;
 
@@ -16,22 +16,23 @@ public class BatScript : MonoBehaviour
     IEnumerator value;
 
     void Start()
-    { 
+    {
         sizeChange = StartCoroutine(changeSize());
     }
 
     private IEnumerator changeSize()
     {
-
-        t += Time.deltaTime;
-
-        if (t > 3)
+        while (true)
         {
-            t = 0;
+            t += Time.deltaTime;
+            if (t > 3)
+            {
+                t = 0;
+            }
+            float size = BATMANBOOGIE.Evaluate(t / 3);
+
+            transform.localScale = Vector2.one * size;
+            yield return null;
         }
-
-        BATMANBOOGIE.Evaluate(t);
-
-        transform.localScale = Vector2.one * BATMANBOOGIE.Evaluate(t);
     }
 }
