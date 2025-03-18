@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BatScript : MonoBehaviour
@@ -12,15 +13,15 @@ public class BatScript : MonoBehaviour
     public float t;
 
     Coroutine sizeChange;
+    IEnumerator value;
 
     void Start()
-    {
-        
+    { 
+        sizeChange = StartCoroutine(changeSize());
     }
 
-    void Update()
+    private IEnumerator changeSize()
     {
-
 
         t += Time.deltaTime;
 
