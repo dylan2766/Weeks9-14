@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Knight : MonoBehaviour
 {
+
     public float speed = 2;
     Animator animator;
     SpriteRenderer sr;
