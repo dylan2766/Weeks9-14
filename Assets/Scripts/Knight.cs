@@ -9,6 +9,8 @@ public class Knight : MonoBehaviour
     Animator animator;
     SpriteRenderer sr;
     public bool canRun = true;
+
+    public AudioSource spongebob;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -37,5 +39,18 @@ public class Knight : MonoBehaviour
     {
         Debug.Log("The attack has finished!");
         canRun = true;
+    }
+
+    public void SoundFunctionThing()
+    {
+        spongebob.Play();
+    }
+    public void SoundFunctionThing1()
+    {
+        spongebob.Play();
+    }
+    public void SoundFunctionThing2()
+    {
+        spongebob.Play();
     }
 }
