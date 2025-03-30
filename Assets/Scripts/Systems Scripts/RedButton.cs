@@ -16,7 +16,7 @@ public class RedButton : MonoBehaviour
     public void Start()
     {
         t = 1;
-        colour.a = (curve.Evaluate(t) / 1.5f) * 1.3f;
+        colour.a = (curve.Evaluate(t) / 1.8f) * 1.5f;
     }
 
     public void Update()
@@ -38,9 +38,9 @@ public class RedButton : MonoBehaviour
         t = 0;
         while (t < 1)
         {
-            t += Time.deltaTime;
+            t += Time.deltaTime * 2;
             transform.localScale = Vector3.one * max * curve.Evaluate(t);
-            colour.a = (curve.Evaluate(t)/1.5f) * 1.3f;
+            colour.a = (curve.Evaluate(t) / 1.8f) * 1.5f;
             yield return null;
         }
     }
