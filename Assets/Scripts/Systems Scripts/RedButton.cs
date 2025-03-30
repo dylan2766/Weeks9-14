@@ -38,7 +38,7 @@ public class RedButton : MonoBehaviour
         t = 0;
         while (t < 1)
         {
-            t += Time.deltaTime * 2;
+            t += Time.deltaTime * 3;
             transform.localScale = Vector3.one * max * curve.Evaluate(t);
             colour.a = (curve.Evaluate(t) / 1.8f) * 1.5f;
             yield return null;
