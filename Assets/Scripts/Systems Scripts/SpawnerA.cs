@@ -31,7 +31,7 @@ public class SpawnerA : MonoBehaviour
         transform.position = pos;
 
         t += Time.deltaTime;
-        if (t > 2)
+        if (t > 1)
         {
             chance = Random.Range(0, 2);
             if(chance >= 1)
