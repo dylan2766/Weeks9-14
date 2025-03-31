@@ -14,6 +14,8 @@ public class YellowButton : MonoBehaviour
     public float min = 0;
     public float max = 1;
 
+    public SpriteRenderer sr;
+
     public SpawnerA yellowSpawner;
 
     public void Start()

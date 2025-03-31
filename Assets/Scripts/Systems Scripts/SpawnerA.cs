@@ -13,6 +13,10 @@ public class SpawnerA : MonoBehaviour
     public bool yellowS = false;
     public bool blueD = false;
 
+    public GameObject redButton;
+    public GameObject yellowButton;
+    public GameObject blueButton;
+
     public GameObject newNote;
 
     public List<GameObject> spawnedNotes;
