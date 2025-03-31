@@ -6,6 +6,7 @@ public class SpawnerA : MonoBehaviour
 {
     public GameObject prefab;
     public float t;
+    public float chance;
 
 
     void Update()
@@ -16,7 +17,11 @@ public class SpawnerA : MonoBehaviour
         t += Time.deltaTime;
         if (t > 2)
         {
-            Instantiate(prefab, pos, Quaternion.identity);
+            chance = Random.Range(0, 2);
+            if(chance >= 1)
+            {
+                Instantiate(prefab, pos, Quaternion.identity);
+            }
             t = 0;
         }
     }
