@@ -648,9 +648,10 @@ MonoBehaviour:
     m_PostInfinity: 1
     m_RotationOrder: 4
   t: 1
+  tR: 0
   min: 0
   max: 1
-  aOn: 0
+  redSpawner: {fileID: 550367944}
 --- !u!1 &533087464
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +700,9 @@ MonoBehaviour:
   t: 0
   chance: 0
   endPos: -11
+  redA: 0
+  yellowS: 0
+  blueD: 0
   newNote: {fileID: 0}
   spawnedNotes: []
 --- !u!1 &550367942
@@ -749,6 +753,9 @@ MonoBehaviour:
   t: 0
   chance: 0
   endPos: -11
+  redA: 0
+  yellowS: 0
+  blueD: 0
   newNote: {fileID: 0}
   spawnedNotes: []
 --- !u!1 &667431288
@@ -1012,7 +1019,6 @@ MonoBehaviour:
   t: 1
   min: 0
   max: 1
-  dOn: 0
 --- !u!1 &755437687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,7 +1828,6 @@ MonoBehaviour:
   t: 1
   min: 0
   max: 1
-  sOn: 0
 --- !u!1 &1585684805
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,6 +2028,9 @@ MonoBehaviour:
   t: 0
   chance: 0
   endPos: -11
+  redA: 0
+  yellowS: 0
+  blueD: 0
   newNote: {fileID: 0}
   spawnedNotes: []
 --- !u!1 &1960723356
