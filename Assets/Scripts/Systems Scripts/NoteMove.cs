@@ -6,6 +6,9 @@ public class NoteMove : MonoBehaviour
 {
     public float speed;
     public SpawnerA noteSpawner;
+    public RedButton redButton;
+    public YellowButton yellowButton;
+    public BlueButton blueButton;
     public float destroyTime;
 
     public bool aOn = false;
@@ -26,16 +29,19 @@ public class NoteMove : MonoBehaviour
         if ((pos.x >= -8 && pos.x <= -6 && pos.y == 2) && aOn == true)
         {
             Debug.Log("A WORKED");
+            Destroy(gameObject, 0.1f);
         }
 
         if ((pos.x >= -8 && pos.x <= -6 && pos.y == 0) && sOn == true)
         {
             Debug.Log("S WORKED");
+            Destroy(gameObject, 0.1f);
         }
 
         if ((pos.x >= -8 && pos.x <= -6 && pos.y == -2) && dOn == true)
         {
             Debug.Log("D WORKED");
+            Destroy(gameObject, 0.1f);
         }
 
         Destroy(gameObject,destroyTime);

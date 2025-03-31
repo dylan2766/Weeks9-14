@@ -1017,8 +1017,10 @@ MonoBehaviour:
     m_PostInfinity: 1
     m_RotationOrder: 4
   t: 1
+  tB: 0
   min: 0
   max: 1
+  blueSpawner: {fileID: 533087466}
 --- !u!1 &755437687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,8 +1828,10 @@ MonoBehaviour:
     m_PostInfinity: 1
     m_RotationOrder: 4
   t: 1
+  tY: 0
   min: 0
   max: 1
+  yellowSpawner: {fileID: 1959925933}
 --- !u!1 &1585684805
 GameObject:
   m_ObjectHideFlags: 0

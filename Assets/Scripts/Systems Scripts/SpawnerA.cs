@@ -22,8 +22,9 @@ public class SpawnerA : MonoBehaviour
         spawnedNotes = new List<GameObject>();
     }
 
-    void Update()
+    public void Update()
     {
+
         Vector2 pos = transform.position;
         transform.position = pos;
 
@@ -44,6 +45,10 @@ public class SpawnerA : MonoBehaviour
                 spawnedNote.aOn = redA;
                 spawnedNote.sOn = yellowS;
                 spawnedNote.dOn = blueD;
+
+                redA = spawnedNote.aOn;
+                yellowS = spawnedNote.sOn;
+                blueD = spawnedNote.dOn;
             }
             t = 0;
         }
