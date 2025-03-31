@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  endPos: -11
 --- !u!1 &3661912129935503366
 GameObject:
   m_ObjectHideFlags: 0

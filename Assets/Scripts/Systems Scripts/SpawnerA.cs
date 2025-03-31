@@ -7,7 +7,16 @@ public class SpawnerA : MonoBehaviour
     public GameObject prefab;
     public float t;
     public float chance;
+    public float endPos;
 
+    public GameObject newNote;
+
+    public List<GameObject> spawnedNotes;
+
+    void Start()
+    {
+        spawnedNotes = new List<GameObject>();
+    }
 
     void Update()
     {
@@ -20,7 +29,13 @@ public class SpawnerA : MonoBehaviour
             chance = Random.Range(0, 2);
             if(chance >= 1)
             {
-                Instantiate(prefab, pos, Quaternion.identity);
+                newNote = Instantiate(prefab, pos, Quaternion.identity);
+
+                spawnedNotes.Add(newNote);
+
+                NoteMove spawnedNote = newNote.GetComponent<NoteMove>();
+
+                spawnedNote.noteSpawner = this;
             }
             t = 0;
         }
