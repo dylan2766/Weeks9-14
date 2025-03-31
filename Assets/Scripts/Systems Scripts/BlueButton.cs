@@ -16,7 +16,7 @@ public class BlueButton : MonoBehaviour
     public void Start()
     {
         t = 1;
-        colour.a = (curve.Evaluate(t) / 1.8f) * 1.5f;
+        colour.a = (curve.Evaluate(t) / 3f) * 1.5f;
     }
 
     public void Update()
@@ -40,7 +40,7 @@ public class BlueButton : MonoBehaviour
         {
             t += Time.deltaTime * 3;
             transform.localScale = Vector3.one * max * curve.Evaluate(t);
-            colour.a = (curve.Evaluate(t) / 1.8f) * 1.5f;
+            colour.a = (curve.Evaluate(t) / 3f) * 1.5f;
             yield return null;
         }
     }
