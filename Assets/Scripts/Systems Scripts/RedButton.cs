@@ -12,6 +12,7 @@ public class RedButton : MonoBehaviour
     public float t = 1;
     public float min = 0;
     public float max = 1;
+    public bool aOn = false;
 
     public void Start()
     {
