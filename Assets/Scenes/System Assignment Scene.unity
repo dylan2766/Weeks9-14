@@ -703,7 +703,6 @@ MonoBehaviour:
   redButton: {fileID: 463037376}
   yellowButton: {fileID: 1434497892}
   blueButton: {fileID: 720760441}
-  score: {fileID: 0}
   newNote: {fileID: 0}
   spawnedNotes: []
 --- !u!1 &550367942
@@ -757,7 +756,6 @@ MonoBehaviour:
   redButton: {fileID: 463037376}
   yellowButton: {fileID: 1434497892}
   blueButton: {fileID: 720760441}
-  score: {fileID: 1003688300}
   newNote: {fileID: 0}
   spawnedNotes: []
 --- !u!1 &667431288
@@ -2220,7 +2218,6 @@ MonoBehaviour:
   redButton: {fileID: 463037376}
   yellowButton: {fileID: 1434497892}
   blueButton: {fileID: 720760441}
-  score: {fileID: 0}
   newNote: {fileID: 0}
   spawnedNotes: []
 --- !u!1 &1960723356

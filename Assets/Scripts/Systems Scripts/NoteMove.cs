@@ -22,7 +22,7 @@ public class NoteMove : MonoBehaviour
         destroyTime = 5;
     }
 
-    void Update()
+    public void Update()
     {
         Vector3 pos = transform.position;
         pos.x -= speed * Time.deltaTime;
@@ -35,11 +35,11 @@ public class NoteMove : MonoBehaviour
             if((pos.x >= -8f && pos.x <= -6.2f && pos.y <= 2.1f && pos.y >= 1.9f))
             {
                 Destroy(gameObject);
-                score.currentScore = score.currentScore + 20;
+                score.currentScore = score.currentScore + 100;
             }
             else
             {
-                score.currentScore = score.currentScore - 10;
+                score.currentScore = score.currentScore - 50;
             }
 
         }
@@ -51,11 +51,11 @@ public class NoteMove : MonoBehaviour
             if ((pos.x >= -8f && pos.x <= -6.2f && pos.y <= 0.1f && pos.y >= -0.1f))
             {
                 Destroy(gameObject);
-                score.currentScore = score.currentScore + 20;
+                score.currentScore = score.currentScore + 100;
             }
             else
             {
-                score.currentScore = score.currentScore - 10;
+                score.currentScore = score.currentScore - 50;
             }
         }
 
@@ -66,11 +66,11 @@ public class NoteMove : MonoBehaviour
             if ((pos.x >= -8f && pos.x <= -6.2f && pos.y <= -1.9f && pos.y >= -2.1f))
             {
                 Destroy(gameObject);
-                score.currentScore = score.currentScore + 20;
+                score.currentScore = score.currentScore + 100;
             }
             else
             {
-                score.currentScore = score.currentScore - 10;
+                score.currentScore = score.currentScore - 50;
             }
         }
 
