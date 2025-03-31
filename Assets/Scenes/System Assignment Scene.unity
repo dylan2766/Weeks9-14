@@ -648,7 +648,6 @@ MonoBehaviour:
     m_PostInfinity: 1
     m_RotationOrder: 4
   t: 1
-  tR: 0
   min: 0
   max: 1
   sr: {fileID: 1101972812}
@@ -701,12 +700,10 @@ MonoBehaviour:
   t: 0
   chance: 0
   endPos: -11
-  redA: 0
-  yellowS: 0
-  blueD: 0
   redButton: {fileID: 463037376}
   yellowButton: {fileID: 1434497892}
   blueButton: {fileID: 720760441}
+  score: {fileID: 0}
   newNote: {fileID: 0}
   spawnedNotes: []
 --- !u!1 &550367942
@@ -757,12 +754,10 @@ MonoBehaviour:
   t: 0
   chance: 0
   endPos: -11
-  redA: 0
-  yellowS: 0
-  blueD: 0
   redButton: {fileID: 463037376}
   yellowButton: {fileID: 1434497892}
   blueButton: {fileID: 720760441}
+  score: {fileID: 1003688300}
   newNote: {fileID: 0}
   spawnedNotes: []
 --- !u!1 &667431288
@@ -1024,7 +1019,6 @@ MonoBehaviour:
     m_PostInfinity: 1
     m_RotationOrder: 4
   t: 1
-  tB: 0
   min: 0
   max: 1
   sr: {fileID: 2012805161}
@@ -1561,6 +1555,7 @@ GameObject:
   - component: {fileID: 1003688297}
   - component: {fileID: 1003688299}
   - component: {fileID: 1003688298}
+  - component: {fileID: 1003688300}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -1626,6 +1621,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003688296}
   m_CullTransparentMesh: 1
+--- !u!114 &1003688300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003688296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd3ac94a6bee4e46a90a61bf9fdb50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 964881079}
+  currentScore: 0
 --- !u!1 &1101972811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2004,7 +2013,6 @@ MonoBehaviour:
     m_PostInfinity: 1
     m_RotationOrder: 4
   t: 1
-  tY: 0
   min: 0
   max: 1
   sr: {fileID: 1369740376}
@@ -2209,12 +2217,10 @@ MonoBehaviour:
   t: 0
   chance: 0
   endPos: -11
-  redA: 0
-  yellowS: 0
-  blueD: 0
   redButton: {fileID: 463037376}
   yellowButton: {fileID: 1434497892}
   blueButton: {fileID: 720760441}
+  score: {fileID: 0}
   newNote: {fileID: 0}
   spawnedNotes: []
 --- !u!1 &1960723356
