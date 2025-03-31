@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Cinemachine;
 
 public class TileSwapper : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class TileSwapper : MonoBehaviour
 
     public Tile grass;
     public Tile stone;
+
+    public CinemachineImpulseSource impulseSource;
+
 
     void Update()
     {
@@ -29,6 +33,7 @@ public class TileSwapper : MonoBehaviour
             {
                 Debug.Log("This is grass, turn me into stone!");
                 tilemap.SetTile(gridPos, stone);
+                impulseSource.GenerateImpulse();
             }
         }
     }
