@@ -38,7 +38,7 @@ public class BlueButton : MonoBehaviour
         {
             tB += Time.deltaTime;
 
-            if (tB >= 1)
+            if (tB >= 0.5f)
             {
                 tB = 0;
                 blueSpawner.blueD = false;

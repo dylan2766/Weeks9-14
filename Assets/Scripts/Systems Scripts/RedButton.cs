@@ -38,7 +38,7 @@ public class RedButton : MonoBehaviour
         {
             tR += Time.deltaTime;
 
-            if(tR >= 1)
+            if(tR >= 0.5f)
             {
                 tR = 0;
                 redSpawner.redA = false;

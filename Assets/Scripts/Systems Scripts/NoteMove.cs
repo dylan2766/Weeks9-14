@@ -28,20 +28,20 @@ public class NoteMove : MonoBehaviour
 
         if ((pos.x >= -8 && pos.x <= -6 && pos.y <= 2.1f && pos.y >= 1.9f) && aOn == true)
         {
+            Destroy(gameObject);
             Debug.Log("A WORKED");
-            Destroy(gameObject, 0.1f);
         }
 
         if ((pos.x >= -8 && pos.x <= -6 && pos.y <= 0.1f && pos.y >= -0.1f) && sOn == true)
         {
+            Destroy(gameObject);
             Debug.Log("S WORKED");
-            Destroy(gameObject, 0.1f);
         }
 
         if ((pos.x >= -8 && pos.x <= -6 && pos.y <= -1.9f && pos.y >= -2.1f) && dOn == true)
         {
+            Destroy(gameObject);
             Debug.Log("D WORKED");
-            Destroy(gameObject, 0.1f);
         }
 
         Destroy(gameObject,destroyTime);

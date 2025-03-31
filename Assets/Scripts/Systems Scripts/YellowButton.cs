@@ -38,7 +38,7 @@ public class YellowButton : MonoBehaviour
         {
             tY += Time.deltaTime;
 
-            if (tY >= 1)
+            if (tY >= 0.5f)
             {
                 tY = 0;
                 yellowSpawner.yellowS = false;
