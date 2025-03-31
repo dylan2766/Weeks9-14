@@ -10,7 +10,6 @@ public class YellowButton : MonoBehaviour
     public Color colour;
     public AnimationCurve curve;
     public float t = 1;
-    public float tY = 0;
     public float min = 0;
     public float max = 1;
 
@@ -28,22 +27,9 @@ public class YellowButton : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S) && t >= 1f)
         {
-            yellowSpawner.yellowS = true;
             ClickedOn();
         }
         image.color = colour;
-
-        //Changes Yellow S button to on and off after 1 seconds
-        if (yellowSpawner.yellowS == true)
-        {
-            tY += Time.deltaTime;
-
-            if (tY >= 0.5f)
-            {
-                tY = 0;
-                yellowSpawner.yellowS = false;
-            }
-        }
     }
 
     public void ClickedOn()

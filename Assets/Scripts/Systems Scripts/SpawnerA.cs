@@ -9,10 +9,6 @@ public class SpawnerA : MonoBehaviour
     public float chance;
     public float endPos;
 
-    public bool redA = false;
-    public bool yellowS = false;
-    public bool blueD = false;
-
     public GameObject redButton;
     public GameObject yellowButton;
     public GameObject blueButton;
@@ -45,14 +41,6 @@ public class SpawnerA : MonoBehaviour
                 NoteMove spawnedNote = newNote.GetComponent<NoteMove>();
 
                 spawnedNote.noteSpawner = this;
-
-                spawnedNote.aOn = redA;
-                spawnedNote.sOn = yellowS;
-                spawnedNote.dOn = blueD;
-
-                redA = spawnedNote.aOn;
-                yellowS = spawnedNote.sOn;
-                blueD = spawnedNote.dOn;
             }
             t = 0;
         }

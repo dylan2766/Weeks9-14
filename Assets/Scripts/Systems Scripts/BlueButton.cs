@@ -10,7 +10,6 @@ public class BlueButton : MonoBehaviour
     public Color colour;
     public AnimationCurve curve;
     public float t = 1;
-    public float tB = 0;
     public float min = 0;
     public float max = 1;
 
@@ -28,22 +27,9 @@ public class BlueButton : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.D) && t >= 1f)
         {
-            blueSpawner.blueD = true;
             ClickedOn();
         }
         image.color = colour;
-
-        //Changes Blue D button to on and off after 1 seconds
-        if (blueSpawner.blueD == true)
-        {
-            tB += Time.deltaTime;
-
-            if (tB >= 0.5f)
-            {
-                tB = 0;
-                blueSpawner.blueD = false;
-            }
-        }
     }
 
     public void ClickedOn()

@@ -10,7 +10,6 @@ public class RedButton : MonoBehaviour
     public Color colour;
     public AnimationCurve curve;
     public float t = 1;
-    public float tR = 0;
     public float min = 0;
     public float max = 1;
 
@@ -28,22 +27,9 @@ public class RedButton : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A) && t >= 1f)
         {
-            redSpawner.redA = true;
             ClickedOn();
         }
         image.color = colour;
-        
-        //Changes Red A button to on and off after 1 second
-        if(redSpawner.redA == true)
-        {
-            tR += Time.deltaTime;
-
-            if(tR >= 0.5f)
-            {
-                tR = 0;
-                redSpawner.redA = false;
-            }
-        }
     }
 
     public void ClickedOn()

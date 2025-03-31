@@ -11,10 +11,6 @@ public class NoteMove : MonoBehaviour
     public BlueButton blueButton;
     public float destroyTime;
 
-    public bool aOn = false;
-    public bool sOn = false;
-    public bool dOn = false;
-
     void Start()
     {
         destroyTime = 5;
@@ -22,23 +18,24 @@ public class NoteMove : MonoBehaviour
 
     void Update()
     {
+       
         Vector3 pos = transform.position;
         pos.x -= speed * Time.deltaTime;
         transform.position = pos;
 
-        if ((pos.x >= -8 && pos.x <= -6 && pos.y <= 2.1f && pos.y >= 1.9f) && aOn == true)
+        if ((pos.x >= -8f && pos.x <= -6.2f && pos.y <= 2.1f && pos.y >= 1.9f) && Input.GetKeyDown(KeyCode.A))
         {
             Destroy(gameObject);
             Debug.Log("A WORKED");
         }
 
-        if ((pos.x >= -8 && pos.x <= -6 && pos.y <= 0.1f && pos.y >= -0.1f) && sOn == true)
+        if ((pos.x >= -8f && pos.x <= -6.2f && pos.y <= 0.1f && pos.y >= -0.1f) && Input.GetKeyDown(KeyCode.S))
         {
             Destroy(gameObject);
             Debug.Log("S WORKED");
         }
 
-        if ((pos.x >= -8 && pos.x <= -6 && pos.y <= -1.9f && pos.y >= -2.1f) && dOn == true)
+        if ((pos.x >= -8f && pos.x <= -6.2f && pos.y <= -1.9f && pos.y >= -2.1f) && Input.GetKeyDown(KeyCode.D))
         {
             Destroy(gameObject);
             Debug.Log("D WORKED");
