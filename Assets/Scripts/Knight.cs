@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Tilemaps;
 
 public class Knight : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class Knight : MonoBehaviour
     Animator animator;
     SpriteRenderer sr;
     public bool canRun = true;
+
+    public Tilemap tilemap;
+    public Tile grass;
+    public Tile stone;
 
     public CinemachineImpulseSource impulseSource;
 
@@ -23,7 +28,10 @@ public class Knight : MonoBehaviour
     void Update()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        Vector3Int gridPos = tilemap.WorldToCell(mousePos);
+
+        if (Input.GetKeyDown(KeyCode.Space) && tilemap.GetTile(gridPos) == stone)
         {
             transform.position = mousePos;
         }
