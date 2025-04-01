@@ -34,7 +34,7 @@ public class SpawnerA : MonoBehaviour
         if (t > 1)
         {
             chance = Random.Range(0, 2);
-            if(chance >= 1)
+            if (chance >= 1)
             {
                 newNote = Instantiate(prefab, pos, Quaternion.identity);
 

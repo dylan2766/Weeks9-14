@@ -31,8 +31,8 @@ public class NoteMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
             Score score = GetComponent<Score>();
-            
-            if((pos.x >= -8.2f && pos.x <= -6f && pos.y <= 2.1f && pos.y >= 1.9f))
+
+            if ((pos.x >= -8.2f && pos.x <= -6f && pos.y <= 2.1f && pos.y >= 1.9f))
             {
                 Destroy(gameObject);
                 score.currentScore = score.currentScore + 100;
