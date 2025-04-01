@@ -32363,6 +32363,7 @@ GameObject:
   - component: {fileID: 1079694549}
   - component: {fileID: 1079694548}
   - component: {fileID: 1079694550}
+  - component: {fileID: 1079694551}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -32478,6 +32479,29 @@ MonoBehaviour:
     m_DissipationDistance: 100
     m_PropagationSpeed: 343
   m_DefaultVelocity: {x: 0, y: -1, z: 0}
+--- !u!114 &1079694551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079694547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ApplyAfter: 2
+  m_ChannelMask: 1
+  m_Gain: 1
+  m_Use2DDistance: 0
+  m_UseCameraSpace: 1
+  m_ReactionSettings:
+    m_SecondaryNoise: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_Duration: 1
+    m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1001 &1201302741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32561,39 +32585,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3687393564722349265, guid: dbdf9d8b9f83fb34f912e3a4d9f33470, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1201302743}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbdf9d8b9f83fb34f912e3a4d9f33470, type: 3}
---- !u!1 &1201302742 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3687393564722349265, guid: dbdf9d8b9f83fb34f912e3a4d9f33470, type: 3}
-  m_PrefabInstance: {fileID: 1201302741}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1201302743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201302742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ApplyAfter: 2
-  m_ChannelMask: 1
-  m_Gain: 1
-  m_Use2DDistance: 0
-  m_UseCameraSpace: 1
-  m_ReactionSettings:
-    m_SecondaryNoise: {fileID: 0}
-    m_AmplitudeGain: 1
-    m_FrequencyGain: 1
-    m_Duration: 1
-    m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &2076088839
 GameObject:
   m_ObjectHideFlags: 0
