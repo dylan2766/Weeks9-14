@@ -11,6 +11,8 @@ public class Knight : MonoBehaviour
     SpriteRenderer sr;
     public bool canRun = true;
 
+    public CinemachineImpulseSource impulseSource;
+
     public AudioSource spongebob;
     void Start()
     {
@@ -45,16 +47,16 @@ public class Knight : MonoBehaviour
     public void SoundFunctionThing()
     {
         spongebob.Play();
-
+        impulseSource.GenerateImpulse();
     }
     public void SoundFunctionThing1()
     {
         spongebob.Play();
-
+        impulseSource.GenerateImpulse();
     }
     public void SoundFunctionThing2()
     {
         spongebob.Play();
-
+        impulseSource.GenerateImpulse();
     }
 }
