@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class NoteMove : MonoBehaviour
 {
@@ -32,7 +33,7 @@ public class NoteMove : MonoBehaviour
         {
             Score score = GetComponent<Score>();
 
-            if ((pos.x >= -8.2f && pos.x <= -6f && pos.y <= 2.1f && pos.y >= 1.9f))
+            if ((pos.x >= -9f && pos.x <= -6f && pos.y <= 2.1f && pos.y >= 1.9f))
             {
                 Destroy(gameObject);
                 score.currentScore = score.currentScore + 100;
@@ -48,7 +49,7 @@ public class NoteMove : MonoBehaviour
         {
             Score score = GetComponent<Score>();
 
-            if ((pos.x >= -8.2f && pos.x <= -6f && pos.y <= 0.1f && pos.y >= -0.1f))
+            if ((pos.x >= -9f && pos.x <= -6f && pos.y <= 0.1f && pos.y >= -0.1f))
             {
                 Destroy(gameObject);
                 score.currentScore = score.currentScore + 100;
@@ -63,7 +64,7 @@ public class NoteMove : MonoBehaviour
         {
             Score score = GetComponent<Score>();
 
-            if ((pos.x >= -8.2f && pos.x <= -6f && pos.y <= -1.9f && pos.y >= -2.1f))
+            if ((pos.x >= -9f && pos.x <= -6f && pos.y <= -1.9f && pos.y >= -2.1f))
             {
                 Destroy(gameObject);
                 score.currentScore = score.currentScore + 100;

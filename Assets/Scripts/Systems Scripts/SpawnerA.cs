@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class SpawnerA : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class SpawnerA : MonoBehaviour
     public GameObject blueButton;
 
     public GameObject newNote;
+
+    public Button boost;
+    public UnityEvent OnClick;
 
     public List<GameObject> spawnedNotes;
 
