@@ -22,6 +22,12 @@ public class Knight : MonoBehaviour
 
     void Update()
     {
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            transform.position = mousePos;
+        }
+
         float direction = Input.GetAxis("Horizontal");
         sr.flipX = direction < 0;
 
