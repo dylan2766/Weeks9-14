@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class Knight : MonoBehaviour
 {
@@ -44,13 +45,16 @@ public class Knight : MonoBehaviour
     public void SoundFunctionThing()
     {
         spongebob.Play();
+
     }
     public void SoundFunctionThing1()
     {
         spongebob.Play();
+
     }
     public void SoundFunctionThing2()
     {
         spongebob.Play();
+
     }
 }
