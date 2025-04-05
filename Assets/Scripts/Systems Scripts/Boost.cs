@@ -11,11 +11,13 @@ public class Boost : MonoBehaviour
 
     public Image image;
     public Color colour;
+    public Timer time;
 
     public void IsOn()
     {
         colour.a = 0.2f;
         image.color = colour;
+        time.boost = 1.5f;
 
         spawnerA.speed = spawnerA.speed / 2;
         spawnerS.speed = spawnerS.speed / 2;
@@ -26,6 +28,7 @@ public class Boost : MonoBehaviour
     {
         colour.a = 0.8f;
         image.color = colour;
+        time.boost = 1;
 
         spawnerA.speed = spawnerA.speed * 2;
         spawnerS.speed = spawnerS.speed * 2;
