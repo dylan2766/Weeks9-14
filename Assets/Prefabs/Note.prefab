@@ -100,8 +100,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   noteSpawner: {fileID: 0}
+  redButton: {fileID: 0}
+  yellowButton: {fileID: 0}
+  blueButton: {fileID: 0}
   destroyTime: 0
-  sprite: {fileID: 5486298813117047324}
 --- !u!1 &3661912129935503366
 GameObject:
   m_ObjectHideFlags: 0

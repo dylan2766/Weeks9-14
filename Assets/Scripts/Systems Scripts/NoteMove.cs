@@ -12,11 +12,7 @@ public class NoteMove : MonoBehaviour
     public RedButton redButton;
     public YellowButton yellowButton;
     public BlueButton blueButton;
-    public Score score;
     public float destroyTime;
-
-    public bool points = false;
-    public bool losePoints = false;
 
     void Start()
     {
@@ -31,47 +27,26 @@ public class NoteMove : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Score score = GetComponent<Score>();
-
             if ((pos.x >= -9f && pos.x <= -6f && pos.y <= 2.1f && pos.y >= 1.9f))
             {
                 Destroy(gameObject);
-                score.currentScore = score.currentScore + 100;
-            }
-            else
-            {
-                score.currentScore = score.currentScore - 50;
             }
 
         }
 
         if (Input.GetKeyDown(KeyCode.S))
         {
-            Score score = GetComponent<Score>();
-
             if ((pos.x >= -9f && pos.x <= -6f && pos.y <= 0.1f && pos.y >= -0.1f))
             {
                 Destroy(gameObject);
-                score.currentScore = score.currentScore + 100;
-            }
-            else
-            {
-                score.currentScore = score.currentScore - 50;
             }
         }
 
         if (Input.GetKeyDown(KeyCode.D))
         {
-            Score score = GetComponent<Score>();
-
             if ((pos.x >= -9f && pos.x <= -6f && pos.y <= -1.9f && pos.y >= -2.1f))
             {
                 Destroy(gameObject);
-                score.currentScore = score.currentScore + 100;
-            }
-            else
-            {
-                score.currentScore = score.currentScore - 50;
             }
         }
 
