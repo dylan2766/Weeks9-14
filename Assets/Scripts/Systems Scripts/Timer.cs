@@ -41,7 +41,7 @@ public class Timer : MonoBehaviour
     {
         text.text = "Timer: " + Mathf.Round(t);
 
-        if (t < 0.1f)
+        if (t < 0.1f || spawnerAScript.endGame == true || spawnerDScript.endGame == true || spawnerSScript.endGame == true)
         {
             t = 0;
             spawnerAScript.enabled = false;

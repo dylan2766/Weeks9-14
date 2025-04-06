@@ -24,8 +24,11 @@ public class SpawnerA : MonoBehaviour
 
     public List<GameObject> spawnedNotes;
 
+    public bool endGame;
+
     void Start()
     {
+        endGame = false;
         speed = 1;
         spawnedNotes = new List<GameObject>();
     }
@@ -51,6 +54,10 @@ public class SpawnerA : MonoBehaviour
                 spawnedNote.noteSpawner = this;
             }
             t = 0;
+        }
+        if (newNote.transform.position.x <= -11)
+        {
+            endGame = true;
         }
     }
 }
