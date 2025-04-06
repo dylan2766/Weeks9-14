@@ -24,18 +24,14 @@ public class SpawnerA : MonoBehaviour
 
     public List<GameObject> spawnedNotes;
 
-    public bool endGame;
-
     void Start()
     {
-        endGame = false;
         speed = 1;
         spawnedNotes = new List<GameObject>();
     }
 
     public void Update()
     {
-
         Vector2 pos = transform.position;
         transform.position = pos;
 
@@ -54,10 +50,6 @@ public class SpawnerA : MonoBehaviour
                 spawnedNote.noteSpawner = this;
             }
             t = 0;
-        }
-        if (newNote.transform.position.x <= -11)
-        {
-            endGame = true;
         }
     }
 }

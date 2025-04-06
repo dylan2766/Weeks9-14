@@ -14,8 +14,6 @@ public class NoteMove : MonoBehaviour
     public BlueButton blueButton;
     public float destroyTime;
 
-    public bool gameOver = false;
-
     void Start()
     {
         destroyTime = 5;
@@ -51,12 +49,5 @@ public class NoteMove : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-
-        if ((pos.x <= -11f))
-        {
-            gameOver = true;
-            //Destroy(gameObject);
-        }
-        //Destroy(gameObject,destroyTime);
     }
 }
