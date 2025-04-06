@@ -43,6 +43,7 @@ public class Timer : MonoBehaviour
 
         if (t < 0.1f)
         {
+            StopCoroutine(TimerOn());
             t = 0;
             spawnerAScript.enabled = false;
             spawnerSScript.enabled = false;
