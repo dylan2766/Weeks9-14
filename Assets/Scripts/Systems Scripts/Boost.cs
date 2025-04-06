@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Boost : MonoBehaviour
 {
+    //variables
     public SpawnerA spawnerA;
     public SpawnerA spawnerS;
     public SpawnerA spawnerD;
@@ -13,6 +14,7 @@ public class Boost : MonoBehaviour
     public Color colour;
     public Timer time;
 
+    //if boost is enabled change the opacity to 20% and change the boost time to 1.5 making the timer drain faster and set the spawn speed of notes to be doubled
     public void IsOn()
     {
         colour.a = 0.2f;
@@ -24,6 +26,7 @@ public class Boost : MonoBehaviour
         spawnerD.speed = spawnerD.speed / 2;
     }
 
+    //if boost is off change the opacity to more 80% and change boost speed to 1 and reset the spawn note speed to default
     public void IsOff()
     {
         colour.a = 0.8f;

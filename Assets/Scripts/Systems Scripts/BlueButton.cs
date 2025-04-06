@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class BlueButton : MonoBehaviour
 {
+    //variables
     public Image image;
     public Color colour;
     public AnimationCurve curve;
@@ -17,12 +18,14 @@ public class BlueButton : MonoBehaviour
 
     public SpawnerA blueSpawner;
 
+    //sets starting colours
     public void Start()
     {
         t = 1;
         colour.a = (curve.Evaluate(t) / 3f) * 1.5f;
     }
 
+    //if clicked start the coroutine to change the opacity and scale of the button to an animation curve
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.D) && t >= 1f)
